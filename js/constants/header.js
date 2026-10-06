@@ -1,10 +1,9 @@
 export function hamburgerMenu() {
-    document.addEventListener("DOMContentLoaded", function () {
-        const menuToggle = document.getElementById("menu-toggle");
-        const navbar = document.getElementById("navbar");
-        menuToggle.addEventListener("click", function () {
-            navbar.querySelector("ul").classList.toggle("active");
-        });
-    });
+  const menuToggle = document.getElementById("menu-toggle");
+  const menu = document.querySelector("#navbar ul");
 
+  menuToggle.addEventListener("click", () => {
+    const isOpen = menu.classList.toggle("active");
+    menuToggle.setAttribute("aria-expanded", isOpen);
+  });
 }

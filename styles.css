@@ -101,3 +101,83 @@
   -webkit-line-clamp: 4;
   overflow: hidden;
 }
+
+
+
+.latest-posts {
+    font-family: var(--font-family-base);
+    font-weight: var(--fw-base-bold);
+    color: var(--primary-dark-font-color);
+    text-align: center;
+    padding: 4rem;
+
+}
+
+
+/* Slideshow container */
+.slideshowContainer {
+    max-width: 450px;
+    position: relative;
+    margin: auto;
+}
+
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 20%;
+
+    width: auto;
+    padding: 16px;
+    color: var(--primary-light-font-color);
+    transition: 0.5s linear;
+}
+
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+
+.prev:hover,
+.next:hover {
+    background-color: var(--darker-primary-color)
+}
+
+/* rendered text */
+.text {
+    background-color: var(--background-color-card);
+    color: #000000;
+    padding: 10px;
+
+    width: 100%;
+    border-bottom: solid var(--darker-primary-color) 2px;
+
+}
+
+text p:not(:last-child) {
+    text-decoration: underline;
+}
+
+.text a:last-child {
+    text-decoration: none;
+}
+
+.text span {
+    padding: 1rem;
+    background-color: var(--background-color-card);
+}
+
+
+/* Fading animation */
+.slide {
+    animation-name: slide;
+    animation-duration: 1.5s;
+}

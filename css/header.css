@@ -16,8 +16,6 @@ nav ul {
 
 }
 
-
-
 .brand {
     border: 1px solid black;
     padding-left: 1rem;
@@ -42,33 +40,35 @@ nav a {
 }
 
 
-
-
-
-/* Add styles for mobile navigation */
 @media screen and (max-width: 999px) {
     nav ul {
         display: none;
         text-align: center;
     }
 
-
-
     nav ul.active {
         display: block;
 
     }
 
-    #menu-toggle {
-        display: block;
-        position: absolute;
-        font-size: 1.8rem;
-        color: var(--pirmary-dark-font-color);
-        top: -4px;
-        right: 0;
-        padding: 1rem;
+#menu-toggle {
+    display: block;
+    position: absolute;
+    font-size: 1.8rem;
+    color: var(--pirmary-dark-font-color);
+    top: -4px;
+    right: 0;
+    padding: 1rem;
+    border: none;
+    background: none;
+    box-shadow: none;
+    cursor: pointer;
+}
 
-    }
+#menu-toggle:focus-visible {
+    outline: 2px solid var(--pirmary-dark-font-color);
+    outline-offset: -4px;
+}
 
     .brand {
         display: none;
@@ -78,7 +78,6 @@ nav a {
     .nav-link {
         display: block;
         width: 100%;
-        /* Make each list item take up full width */
     }
 
     .brand-mobile {
@@ -91,7 +90,6 @@ nav a {
 
 }
 
-/* Additional styles for desktop navigation */
 @media screen and (min-width: 1000px) {
     #menu-toggle {
         display: none;
